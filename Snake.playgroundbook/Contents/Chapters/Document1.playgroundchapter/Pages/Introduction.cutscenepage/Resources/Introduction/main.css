@@ -1,0 +1,100 @@
+html {
+    height:100%;
+    background-color: rgb(235, 235, 235);
+}
+body {
+    margin:0;
+    font-family: ".SF NS Display", "Helvetica Neue", Helvetica;
+}
+h1 {
+    color: #fff;
+    font-size: 90pt;
+    text-align: center;
+    animation: 3s title-intro;
+    transform: translateY(-30px);
+    transform-origin: 50% 50%;
+    text-shadow:
+            0px 1px 0 #ccc,
+            1px 2px 0 #ccc,
+            2px 3px 0 #ccc,
+            3px 4px 0 #ccc,
+            4px 5px 0 #ccc,
+            5px 6px 0 #ccc,
+            0 30px 30px rgba(0,0,0,.3);
+    margin: 0.2em;
+    margin-top: 0.6em;
+}
+@keyframes title-intro {
+    0%, 5% {
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-30px);
+        transform-origin: 50% 50%;
+        text-shadow:
+                0px 1px 0 #ccc,
+                1px 2px 0 #ccc,
+                2px 3px 0 #ccc,
+                3px 4px 0 #ccc,
+                4px 5px 0 #ccc,
+                5px 6px 0 #ccc,
+                0 30px 30px rgba(0,0,0,.3);
+    }
+}
+
+section {
+    font-size: 24pt;
+    color: #fff;
+    max-width: 870px;
+    margin: 0 auto;
+}
+p {
+    text-align: center;
+    text-shadow:
+            1px 1px 0 #ccc,
+            2px 2px 0 #ccc,
+            3px 3px 0 #ccc,
+            0 10px 10px rgba(0,0,0,.3);
+    animation: 4s text-intro;
+    transform: translateY(-12px);
+    transform-origin: 50% 50%;
+    margin: 0.6em 0;
+}
+@keyframes text-intro {
+    0%, 40% {
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-12px);
+        transform-origin: 50% 50%;
+        text-shadow:
+                1px 1px 0 #ccc,
+                2px 2px 0 #ccc,
+                3px 3px 0 #ccc,
+                0 10px 10px rgba(0,0,0,.3);
+    }
+}
+p:nth-child(1) {
+    animation-duration: 4s;
+}
+p:nth-child(2) {
+    animation-duration: 6.5s;
+}
+p:nth-child(3) {
+    animation-duration: 7.5s;
+}
+p:nth-child(4) {
+    animation-duration: 8s;
+}
